@@ -6,9 +6,8 @@ export default function SectionOne() {
             {/* <div className=''> */}
                 <h1 className='sm:text-[40px] text-3xl sm:mb-8 mb-5 font-bold'>Silly Who?</h1>
                 <p className='sm:w-[55%] sm:text-xl text-base sm:leading-8 leading-8 ml-auto mr-auto'>
-                    We're a female-founded brand bringing all-natural, dermatologically-tested safe products designed
-                    for people of all genders with huhas (and no, we will never EVER design lightening, brightening and
-                    tightening creams for your V. <br/>It deserves to be treated with respect, just like you do, hun.)
+                    May be, being silly is the cost you pay to choose what feels right to you, not minding it even if someone else finds it silly! 
+                    To be yourself. Even if silly. Our fashion too is a little silly, perhaps because its at the very cutting edge.  
                 </p>
             {/* </div> */}
         </section>
