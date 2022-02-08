@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 import '../styles/globals.css'
 import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs'
 
-const publicPages = ['/']
+const publicPages = ['/', '/products/[product]']
 // Supplying a theme prop for clerk
  const theme = {
     general: {
@@ -22,7 +22,6 @@ const publicPages = ['/']
       fontColor: "#333",
     },
  }
-
 
 
 function MyApp({ Component, pageProps }) {
