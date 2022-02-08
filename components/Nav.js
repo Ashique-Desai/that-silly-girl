@@ -21,33 +21,26 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { CartContext } from '../context/shopContext'
 import MiniCart from './MiniCart'
+// Clerk authentication
+import { useUser, UserButton, SignedIn, SignedOut } from '@clerk/nextjs';
+
+
 
 const solutions = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    name: 'SHOP',
+    description: 'ALL CATAGORIES.',
     href: '#',
     icon: ChartBarIcon,
   },
   {
-    name: 'Engagement',
+    name: 'STORY',
     description: 'Speak directly to your customers in a more meaningful way.',
     href: '#',
     icon: CursorClickIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: ViewGridIcon,
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: RefreshIcon,
-  },
+  { name: 'WHY SILLY!', description: "Because being a little silly is important.", href: '#', icon: ShieldCheckIcon },
+
 ]
 const callsToAction = [
   { name: 'Watch Demo', href: '#', icon: PlayIcon },
@@ -92,89 +85,20 @@ export default function NavExperimental3() {
     return (cartQuantity += item?.variantQuantity)
   })
   return (
-    <Popover className="relative bg-transparent">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6">
+    <Popover className="relative bg-transparent uppercase">
+      <div className="max-w-8xl mx-auto px-4 sm:px-16">
         <div className="flex justify-between items-center py-8 md:justify-start md:space-x-10">
           <div className="hidden md:flex justify-start lg:w-0 lg:flex-1">
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
               <a href="#" className="text-base font-medium  hover:text-gray-900">
-                Pricing
+                Shop
               </a>
               <a href="#" className="text-base font-medium  hover:text-gray-900">
-                Docs
+                Story
               </a>
-
-              <Popover className="relative">
-                {({ open }) => (
-                  <>
-                    <Popover.Button
-                      className={classNames(
-                        open ? 'text-gray-900' : 'decoration-inherit',
-                        'group  rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                      )}
-                    >
-                      <span>More</span>
-                      <ChevronDownIcon
-                        className={classNames(
-                          open ? 'text-gray-600' : 'decoration-inherit',
-                          'ml-2 h-5 w-5 group-hover:text-gray-500'
-                        )}
-                        aria-hidden="true"
-                      />
-                    </Popover.Button>
-
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-200"
-                      enterFrom="opacity-0 translate-y-1"
-                      enterTo="opacity-100 translate-y-0"
-                      leave="transition ease-in duration-150"
-                      leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1"
-                    >
-                      <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
-                        <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                          <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                            {resources.map((item) => (
-                              <a
-                                key={item.name}
-                                href={item.href}
-                                className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                              >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
-                                <div className="ml-4">
-                                  <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                  <p className="mt-1 text-sm text-gray-500">{item.description}</p>
-                                </div>
-                              </a>
-                            ))}
-                          </div>
-                          <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
-                            <div>
-                              <h3 className="text-sm tracking-wide font-medium text-gray-500 uppercase">Recent Posts</h3>
-                              <ul role="list" className="mt-4 space-y-4">
-                                {recentPosts.map((post) => (
-                                  <li key={post.id} className="text-base truncate">
-                                    <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
-                                      {post.name}
-                                    </a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                            <div className="mt-5 text-sm">
-                              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                {' '}
-                                View all posts <span aria-hidden="true">&rarr;</span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </Popover.Panel>
-                    </Transition>
-                  </>
-                )}
-              </Popover>
+              <a href="#" className="text-base font-medium  hover:text-gray-900">
+                Why Silly
+              </a>
             </Popover.Group>
           </div>
           {/* Hamburger Menu Below */}
@@ -187,31 +111,54 @@ export default function NavExperimental3() {
           {/* Logo below */}
           <div as="nav" className="flex space-x-10">
             <div className="relative">
-                <a href="#">
-                    <span className="sr-only">Workflow</span>
-                    <img
-                        className="h-10 w-auto sm:h-14"
-                        src="/logo-1-raster.svg"
-                        alt=""
-                    />
-                </a>
+              <a href="#">
+                <span className="sr-only">Workflow</span>
+                <img
+                  className="h-10 w-auto sm:h-14"
+                  src="/logo-1-raster.svg"
+                  alt=""
+                />
+              </a>
             </div>
           </div>
           {/* last element on the navbar below */}
           <div className="md:flex items-center justify-end md:flex-1 lg:w-0">
-              <button class="py-4 px-1 relative border-2 border-transparent decoration-inherit rounded-full hover:text-gray-400 focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Cart">
-                <a className="text-md font-bold cursor-pointer"
-                  onClick={() => setCartOpen(!cartOpen)}>
-                  <svg class="sm:h-8 sm:w-8 h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                  </svg>
-                  <span class="absolute inset-0 object-right-top -mr-6">
-                    <div class="inline-flex items-center px-1.5 py-0.5 border-2 border-white rounded-full text-sm font-semibold leading-4 bg-off-white decration-inherit">
-                      {cartQuantity}
-                    </div>
-                  </span>
+            <SignedIn>
+              <div className="inline-block py-4 px-1 relative decoration-inherit">
+                <UserButton />
+              </div>
+            </SignedIn>
+            {/* Account icon below */}
+            <SignedOut>
+              <Link href="/sign-in">
+                <a className="text-md font-bold cursor-pointer" title="Sign-in / Register">
+                  <button className="py-4 px-1 relative border-2 border-transparent decoration-inherit rounded-full hover:text-gray-900 focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out" aria-label="login">
+                    <svg className="hidden md:block sm:w-5 w-[18px] h-auto sm:mr-2 mr-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.933 20.009">
+                      <path d="M7.076 19.981c-2.899-.227-5.288-1.053-6.367-2.201-.585-.622-.749-1.095-.7-2.018.107-2.019.898-3.906 2.229-5.317.373-.395.513-.481.787-.481.511 0 .872.484.725.973-.034.115-.168.312-.332.489-1.125 1.214-1.773 2.71-1.871 4.317-.037.614.009.741.4 
+              1.107.578.541 1.803 1.044 3.241 1.33 1.754.349 3.951.401 5.785.137 1.781-.257 3.33-.824 4.026-1.475.385-.36.428-.486.387-1.114-.107-1.636-.748-3.101-1.892-4.324-.346-.37-.436-.601-.354-.906.101-.374.512-.631.894-.559.127.024.264.114.465.305 1.067 1.018 
+              1.918 2.588 2.256 4.162.147.684.223 1.704.156 2.094-.291 1.701-2.656 2.973-6.347 3.414-.753.09-2.725.129-3.487.069zm.814-9.229c-.737-.111-1.284-.275-1.83-.549-1.493-.75-2.532-2.122-2.898-3.827-.08-.372-.08-1.6-.001-1.975.356-1.678 1.353-3.024 2.791-3.768A5.12 5.12 
+              0 0 1 8.202.008c1.483-.086 2.994.499 4.069 1.575a5.37 5.37 0 0 1 0 7.609c-.836.836-1.921 1.374-3.103 1.538-.352.049-1.019.06-1.28.02zm1.602-1.649c1.615-.475 2.708-1.825 2.813-3.476.109-1.717-.945-3.309-2.565-3.871-1.405-.487-2.945-.136-3.992.912S4.348 5.255 4.835 
+              6.66c.453 1.306 1.564 2.248 2.982 2.529a5.12 5.12 0 0 0 1.675-.087z" opacity=".99" fill="#ff00af" stroke="currentColor" fillOpacity=".941" strokeWidth="0.8">
+                      </path>
+                    </svg>
+                  </button>
                 </a>
-                <MiniCart cart={cart} />
+              </Link>
+            </SignedOut>
+            {/* Cart icon below */}
+            <button title="Cart" className="py-4 px-1 relative border-2 border-transparent decoration-inherit rounded-full hover:text-gray-900 focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Cart">
+              <a className="text-md font-bold cursor-pointer"
+                onClick={() => setCartOpen(!cartOpen)}>
+                <svg className="sm:h-7 sm:w-7 h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                <span className="absolute inset-0 object-right-top -mr-6">
+                  <div className="inline-flex items-center px-1.5 py-0.5 border-2 border-white rounded-full text-sm font-semibold leading-4 bg-off-white decration-inherit">
+                    {cartQuantity}
+                  </div>
+                </span>
+              </a>
+              <MiniCart cart={cart} />
             </button>
           </div>
         </div>
@@ -245,44 +192,28 @@ export default function NavExperimental3() {
                       href={item.href}
                       className="-m-3 p-3 flex items-center rounded-md"
                     >
-                     <span className="ml-3 text-base font-medium color-off-white">{item.name}</span>
+                      <span className="ml-3 text-base font-medium color-off-white">{item.name}</span>
                     </a>
                   ))}
                 </nav>
               </div>
             </div>
-            <div className="py-6 px-5 space-y-6">
-              {/* <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="#" className="text-base font-medium color-off-white hover:text-gray-700">
-                  Pricing
-                </a>
-
-                <a href="#" className="text-base font-medium color-off-white hover:text-gray-700">
-                  Docs
-                </a>
-                {resources.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-base font-medium color-off-white hover:text-gray-700"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div> */}
+            <div className="py-6 px-5">
               <div>
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium decoration-inherit bg-off-white hover:bg-indigo-700"
-                >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-200">
+                <Link href="/sign-in">
+                  <a
+                    href="#"
+                    className="w-full flex items-center justify-center px-4 py-2 border-transparent rounded-md shadow-sm text-base font-medium decoration-inherit bg-off-white"
+                  >
+                    Sign in / Sign up
+                  </a>
+                </Link>
+                {/* <p className="mt-6 text-center text-base font-medium text-gray-200">
                   Existing customer?{' '}
                   <a href="#" className="color-off-white hover:text-indigo-500">
                     Sign in
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

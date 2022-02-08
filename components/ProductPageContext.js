@@ -3,6 +3,7 @@ import ProductForm from './ProductForm'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
 import RecommendedList from './RecommendedList'
+import SectionWrapper from './SectionWrapper'
 
 
 export default function ProductPageContent({ product }) {
@@ -21,14 +22,15 @@ export default function ProductPageContent({ product }) {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center space-y-8 md:flex-row md:items-start md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
-        <div className="w-full max-w-md border bg-white rounded-2xl overflow-hidden shadow-lg md:w-1/2">
-          <div className="relative h-96 w-full">
+       <SectionWrapper>
+      <div className="max-w-6xl flex flex-col lg:justify-start md:flex-row md:items-start xl:w-10/12">
+        <div className="lg:w-10/12 w-full overflow-hidden lg:pl-8">
+          <div className="relative xl:w-[700px] w-full pt-4">
             <Swiper
               style={{ '--swiper-navigation-color': '#000', '--swiper-pagination-color': '#000' }}
               navigation
               pagination={{ clickable: true }}
-              className="h-96 rounded-2xl"
+              className="xl:w-[700px] w-full rounded-2xl aspect-square"
               loop="true"
             >
               {images}
@@ -37,8 +39,10 @@ export default function ProductPageContent({ product }) {
         </div>
         <ProductForm product={product} />
       </div>
-      <p className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto">{product.description}</p>
+      <p className="pt-4 ml-8 md:space-x-4 mx-auto xl:w-[700px]">{product.description}</p>
+      <hr className='w-full mt-10' />
       <RecommendedList current={product.id} products={product.collections.edges[0].node.products.edges} />
+      </SectionWrapper>
     </div>
   )
 }

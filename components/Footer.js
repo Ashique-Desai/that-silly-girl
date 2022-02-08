@@ -1,26 +1,77 @@
-const navigation = [
-    { name: 'About', href: '#' },
+const navigation1 = [
     { name: 'Shop', href: '#' },
     { name: 'Jobs', href: '#' },
-    { name: 'Terms and Conditions', href: '#' }
+    { name: 'Story', href: '#' },
+    { name: 'Shipping', href: '#' },
+  ]
+
+  const navigation2 = [
+    { name: 'FAQs', href: '#' },
+    { name: 'Terms and Conditions', href: '#' },
+    { name: 'Privacy Policy', href: '#' },
+    { name: 'Returns And Exchanges', href: '#' },
+    {name: 'Impact', href: '#'},
+    
   ]
   
   export default function Footer() {
     return (
-      <footer className="bg-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-          <nav className="flex flex-wrap justify-center">
+      <footer className="bg-sassy-pink mt-16 lg:py-16 py-12 px-4 overflow-hidden sm:px-6 lg:px-8 uppercase">
+        <div className="max-w-screen-3xl ml-auto mr-auto lg:pr-96  flex lg:flex-row-reverse flex-col lg:justify-between">
+        <nav className="lg:hidden flex flex-col text-sm">
+            <div className="color-off-white px-6 py-2">
+              <p>Main</p>
+              <hr className="line bg-off-white m-0 my-2 align-text-left"></hr>
+            </div>
             {
-              navigation.map((item, i) => (
-                <div key={i} className="px-6 py-2">
-                  <a href={item.href} className="text-gray-500 hover:text-gray-900">
+              navigation1.map((item, i) => (
+                <div key={i} className="px-6 lg:py-2 py-0">
+                  <a href={item.href} className="color-off-white hover:text-gray-900">
                     {item.name}
                   </a>
                 </div>
               ))
             }
           </nav>
-          <p className="mt-8 text-center text-gray-400">&copy; 2021 Learn Shopify Next.js Course, All right reserved.</p>
+          <nav className="flex flex-col lg:mt-0 mt-4 text-sm">
+            <div className="color-off-white px-6 py-2">
+              <p>Talk To Us<br/>Hello@ThatSillyGirl.com</p>
+              <hr className="line bg-off-white m-0 my-2 align-text-left"></hr>
+            </div>
+            {
+              navigation2.map((item, i) => (
+                <div key={i} className="px-6 lg:py-2 py-0">
+                  <a href={item.href} className="color-off-white hover:text-gray-900">
+                    {item.name}
+                  </a>
+                </div>
+              ))
+            }
+          </nav>
+          <nav className="lg:flex hidden flex-col text-sm">
+            <div className="color-off-white px-6 py-2">
+              <p>Main</p>
+              <hr className="line bg-off-white m-0 my-2 align-text-left"></hr>
+            </div>
+            {
+              navigation1.map((item, i) => (
+                <div key={i} className="px-6 lg:py-2 py-0">
+                  <a href={item.href} className="color-off-white hover:text-gray-900">
+                    {item.name}
+                  </a>
+                </div>
+              ))
+            }
+          </nav>
+          <div className="px-6 py-2">
+            <p className="lg:mt-0 mt-8 color-off-white lowercase text-sm">
+              &copy; 2022 ThatSillyGirl.
+            </p>
+            <hr className="line bg-off-white m-0 my-2 align-text-left"></hr>
+            <p className="color-off-white m-0 my-2 normal-case text-sm lg:py-2 py-0">
+              Our all natural, dermatologically<br className="xl:hidden"/> tested safe products will keep your <br /> huhas healthy and happy. </p>
+          </div>
+         
         </div>
       </footer>
     )

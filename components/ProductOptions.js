@@ -23,7 +23,7 @@ export default function ProductOptions({ name, values, selectedOptions, setOptio
                     setOptions(name, value)
                   }}
                 />
-                <div className={`p-2 mt-3 text-lg rounded-full block cursor-pointer mr-3 ${checked ? "text-white bg-gray-900" : "text-gray-900 bg-gray-200"}`}>
+                <div className={`p-2 mt-3 text-lg rounded-full block cursor-pointer mr-3 ${checked ? "text-white bg-sassy-pink" : "text-gray-900 bg-gray-200"}`}>
                   <span className="px-2">{value}</span>
                 </div>
               </label>
