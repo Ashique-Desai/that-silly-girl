@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="27.191507mm"
+   height="5.5991735mm"
+   viewBox="0 0 27.191508 5.5991728"
+   version="1.1"
+   id="svg4785"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="logo-2.svg">
+  <defs
+     id="defs4779" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="118.51055"
+     inkscape:cy="-36.854527"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata4782">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-98.038479,-123.24777)">
+    <text
+       xml:space="preserve"
+       style="font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.07429361px;line-height:1.25;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold Oblique';letter-spacing:0px;word-spacing:0px;fill:#ff00a5;fill-opacity:1;stroke:none;stroke-width:0.10185733;"
+       x="109.60278"
+       y="127.04803"
+       id="text9415"><tspan
+         sodipodi:role="line"
+         id="tspan9413"
+         x="109.60278"
+         y="127.04803"
+         style="font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold Oblique';letter-spacing:0.15821405px;fill:#ff00a5;fill-opacity:1;stroke-width:0.10185733;">sassy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.87465334px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff00a5;fill-opacity:1;stroke:none;stroke-width:0.09686632"
+       x="158.26952"
+       y="73.990807"
+       id="text9427"
+       transform="rotate(21.599364)"><tspan
+         sodipodi:role="line"
+         id="tspan9425"
+         x="158.26952"
+         y="73.990807"
+         style="fill:#ff00a5;fill-opacity:1;stroke-width:0.09686632">!</tspan></text>
+    <text
+       id="text9431"
+       y="127.04803"
+       x="101.78515"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.07429361px;line-height:1.25;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold';letter-spacing:0px;word-spacing:0px;fill:#ff00a5;fill-opacity:1;stroke:none;stroke-width:0.10185733"
+       xml:space="preserve"><tspan
+         style="font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold Oblique';letter-spacing:0.15821405px;fill:#ff00a5;fill-opacity:1;stroke-width:0.10185733"
+         y="127.04803"
+         x="101.78515"
+         id="tspan9429"
+         sodipodi:role="line">hey</tspan></text>
+  </g>
+</svg>
