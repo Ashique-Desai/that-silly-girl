@@ -132,7 +132,7 @@ export default function NavExperimental3() {
             <SignedOut>
               <Link href="/sign-in">
                 <a className="text-md font-bold cursor-pointer" title="Sign-in / Register">
-                  <button className="py-4 px-1 relative border-2 border-transparent decoration-inherit rounded-full hover:text-gray-900 focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out" aria-label="login">
+                  <button className="py-4 px-1 relative border-2 border-transparent decoration-inherit rounded-full  focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out" aria-label="login">
                     <svg className="hidden md:block sm:w-5 w-[18px] h-auto sm:mr-2 mr-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.933 20.009">
                       <path d="M7.076 19.981c-2.899-.227-5.288-1.053-6.367-2.201-.585-.622-.749-1.095-.7-2.018.107-2.019.898-3.906 2.229-5.317.373-.395.513-.481.787-.481.511 0 .872.484.725.973-.034.115-.168.312-.332.489-1.125 1.214-1.773 2.71-1.871 4.317-.037.614.009.741.4 
               1.107.578.541 1.803 1.044 3.241 1.33 1.754.349 3.951.401 5.785.137 1.781-.257 3.33-.824 4.026-1.475.385-.36.428-.486.387-1.114-.107-1.636-.748-3.101-1.892-4.324-.346-.37-.436-.601-.354-.906.101-.374.512-.631.894-.559.127.024.264.114.465.305 1.067 1.018 
@@ -146,13 +146,13 @@ export default function NavExperimental3() {
               </Link>
             </SignedOut>
             {/* Cart icon below */}
-            <button title="Cart" className="py-4 px-1 relative border-2 border-transparent decoration-inherit rounded-full hover:text-gray-900 focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Cart">
+            <button title="Cart" className="py-4  relative transition duration-150 ease-in-out" aria-label="Cart">
               <a className="text-md font-bold cursor-pointer"
                 onClick={() => setCartOpen(!cartOpen)}>
                 <svg className="sm:h-7 sm:w-7 h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                   <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
-                <span className="absolute inset-0 object-right-top -mr-6">
+                <span className="absolute -mt-10">
                   <div className="inline-flex items-center px-1.5 py-0.5 border-2 border-white rounded-full text-sm font-semibold leading-4 bg-off-white decration-inherit">
                     {cartQuantity}
                   </div>

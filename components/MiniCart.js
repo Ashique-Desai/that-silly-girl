@@ -49,7 +49,7 @@ export default function MiniCart({ cart }) {
               leaveTo="translate-x-full"
             >
               <div className="w-screen max-w-md">
-                <div className="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
+                <div className="h-full flex flex-col bg-white shadow-xl">
                   <div className="flex-1 py-6 overflow-y-auto px-4 sm:px-6">
                     <div className="flex items-start justify-between">
                       <Dialog.Title className="text-lg font-medium text-gray-900">Shopping cart</Dialog.Title>
