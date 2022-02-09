@@ -13,13 +13,13 @@ export default function CTASignup() {
             <p className='sm:text-xl text-base sm:leading-8 leading-8 ml-auto mr-auto pb-6'>
                 For getting fun stuff on fashion
             </p>
-            <form className='bg-transparent text-current'  onSubmit={registerUser}>
-               <input className='border-b-2 mt-1 mr-1 border-current bg-transparent text-current'
+            <form className='bg-transparent text-current' onSubmit={registerUser}>
+               <input className='border-b-2 mt-1 mr-1 border-current bg-transparent'
                 id="name" 
                 type="text" 
                 autoComplete="name" 
                 required 
-                placeholder='ENTER EMAIL'/>
+                placeholder="ENTER EMAIL" />
                 <button className='bg-sassy-pink color-off-white px-4 py-2 mt-4' type="submit">Subscribe</button>
             </form>
         </div>
