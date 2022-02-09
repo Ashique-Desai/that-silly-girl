@@ -115,7 +115,7 @@ export default function NavExperimental3() {
                 <span className="sr-only">Workflow</span>
                 <img
                   className="h-12 w-auto sm:h-14"
-                  src="/logo-3.svg"
+                  src="/logo-3-raster.svg"
                   alt=""
                 />
               </a>
