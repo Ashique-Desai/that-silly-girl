@@ -4,7 +4,7 @@ export default function SectionOne() {
     return (
         <section className='text-center sm:pt-16 sm:pb-20 sm:mt-8 pt-8 pb-8 px-4'>
             {/* <div className=''> */}
-                <h1 className='sm:text-[40px] text-3xl sm:mb-8 mb-5 font-bold'>Why Silly?</h1>
+                <h1 className='sm:text-[40px] text-3xl sm:mb-8 mb-5 font-bold'>Sassy, who?</h1>
                 <p className='sm:w-[55%] sm:text-xl text-base sm:leading-8 leading-8 ml-auto mr-auto'>
                     New Ideas, New Tech or even New Fashion is thought to be silly at first but in time people come around.
                     We do not wish to wait for those people. We want to be silly, now!
