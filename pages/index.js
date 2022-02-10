@@ -6,11 +6,7 @@ import SectionOne from "../components/SectionOne"
 import Carousel from "../components/Carousel"
 import SocialResponsibility from "../components/SocialResponsibility"
 import Shipping from "../components/Shipping"
-import SectionWrapper from "../components/SectionWrapper"
 import Head from 'next/head'
-
-
-import { useUser, UserButton } from '@clerk/nextjs'
 import CTASignup from "../components/CTASignUp"
 
 
@@ -30,12 +26,9 @@ export default function Home({ products }) {
           <ProductList products={products} />
           <Shipping />
           <CTASignup />
-          {/* <SectionWrapper> */}
           <Carousel />
           <SocialResponsibility />
-          {/* </SectionWrapper> */}
-        </>
-        )
+    </> )
 }
 
         export async function getStaticProps() {
