@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -222,6 +222,50 @@
          id="tspan4794"
          x="94.350487"
          y="159.52959"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold';letter-spacing:0.59372509px;fill:#ff00a5;fill-opacity:1;stroke-width:0.05718956">HEY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.96517277px;line-height:1.25;font-family:C059;-inkscape-font-specification:'C059 Bold';letter-spacing:0px;word-spacing:0px;fill:#ff00a5;fill-opacity:1;stroke:none;stroke-width:0.14912932;"
+       x="123.74471"
+       y="162.3569"
+       id="text4785"><tspan
+         sodipodi:role="line"
+         id="tspan4783"
+         x="123.74471"
+         y="162.3569"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:C059;-inkscape-font-specification:'C059 Bold';letter-spacing:0.23164119px;fill:#ff00a5;fill-opacity:1;stroke-width:0.14912932;">sassy</tspan></text>
+    <text
+       id="text4789"
+       y="158.30116"
+       x="124.3996"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.28758287px;line-height:1.25;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold';letter-spacing:0.59372509px;word-spacing:0px;fill:#ff00a5;fill-opacity:1;stroke:none;stroke-width:0.05718956"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold';letter-spacing:0.59372509px;fill:#ff00a5;fill-opacity:1;stroke-width:0.05718956"
+         y="158.30116"
+         x="124.3996"
+         id="tspan4787"
+         sodipodi:role="line">HEY</tspan></text>
+    <text
+       id="text4793"
+       y="151.49008"
+       x="140.75365"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.96517277px;line-height:1.25;font-family:'URW Gothic';-inkscape-font-specification:'URW Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ff00a5;fill-opacity:1;stroke:none;stroke-width:0.14912932"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'URW Gothic';-inkscape-font-specification:'URW Gothic Bold';letter-spacing:0.23164119px;fill:#ff00a5;fill-opacity:1;stroke-width:0.14912932"
+         y="151.49008"
+         x="140.75365"
+         id="tspan4791"
+         sodipodi:role="line">sassy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.28758287px;line-height:1.25;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold';letter-spacing:0.59372509px;word-spacing:0px;fill:#ff00a5;fill-opacity:1;stroke:none;stroke-width:0.05718956"
+       x="141.12505"
+       y="147.62334"
+       id="text4797"><tspan
+         sodipodi:role="line"
+         id="tspan4795"
+         x="141.12505"
+         y="147.62334"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Sawasdee;-inkscape-font-specification:'Sawasdee Bold';letter-spacing:0.59372509px;fill:#ff00a5;fill-opacity:1;stroke-width:0.05718956">HEY</tspan></text>
   </g>
 </svg>
