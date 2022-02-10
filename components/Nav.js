@@ -111,7 +111,7 @@ export default function NavExperimental3() {
           {/* Logo below */}
           <div as="nav" className="flex space-x-10">
             <div className="relative">
-              <a href="#">
+              <a href="/">
                 <span className="sr-only">Workflow</span>
                 <img
                   className="h-12 w-auto sm:h-14"
