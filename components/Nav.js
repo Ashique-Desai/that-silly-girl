@@ -174,7 +174,7 @@ export default function NavExperimental3() {
         leaveTo="opacity-0 scale-95"
       >
         <Popover.Panel focus className="z-50 absolute top-0  inset-x-0 p-2 transition transform origin-top-right md:hidden">
-          <div className="h-screen rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-sassy-pink divide-y-2 divide-gray-50">
+          <div className="h-screen rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-sassy-pink divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div className="-mr-2">
