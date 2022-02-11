@@ -14,7 +14,7 @@ export default function Home({ products }) {
   return (
     <>
       <Head>
-        <title>ThatSillyGirl</title>
+        <title>heySassy</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="theme-color" content="#ff00a5" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
