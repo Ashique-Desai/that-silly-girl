@@ -1,22 +1,22 @@
 const navigation1 = [
-    { name: 'Shop', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Story', href: '#' },
-    { name: 'Shipping', href: '#' },
+    { name: 'Shop', href: '/shop' },
+    { name: 'Jobs', href: '/jobs' },
+    { name: 'Story', href: '/story' },
+    { name: 'Shipping', href: '/shipping' },
   ]
 
   const navigation2 = [
-    { name: 'FAQs', href: '#' },
-    { name: 'Terms and Conditions', href: '#' },
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'Returns And Exchanges', href: '#' },
-    {name: 'Impact', href: '#'},
+    { name: 'FAQs', href: '/faq' },
+    { name: 'Terms and Conditions', href: '/terms' },
+    { name: 'Privacy Policy', href: '/Privacy' },
+    { name: 'Returns And Exchanges', href: '/returns' },
+    // {name: 'Impact', href: '#'},
     
   ]
   
   export default function Footer() {
     return (
-      <footer className="bg-sassy-pink mt-16 lg:py-16 py-12 px-4 overflow-hidden sm:px-6 lg:px-8 uppercase">
+      <footer className="bg-sassy-pink mt-16 lg:py-24 py-12 px-4 overflow-hidden sm:px-6 lg:px-8 uppercase">
         <div className="max-w-screen-3xl ml-auto mr-auto lg:pr-96  flex lg:flex-row-reverse flex-col lg:justify-between">
         <nav className="lg:hidden flex flex-col text-sm">
             <div className="color-off-white px-6 py-2">
@@ -71,7 +71,7 @@ const navigation1 = [
             <p className="color-off-white m-0 my-2 normal-case text-sm lg:py-2 py-0">
               Our vision is to design and deliver<br className="xl:hidden"/> fashion, while always keeping it fresh. 
               </p>
-              {/* Our all natural, dermatologically<br className="xl:hidden"/> tested safe products will keep your <br /> huhas healthy and happy. </p> */}
+            
           </div>
          
         </div>

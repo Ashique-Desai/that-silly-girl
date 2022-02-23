@@ -1,6 +1,4 @@
 import Link from 'next/link'
-// import { formatter } from '../utils/helpers'
-// import ProductCard from "./ProductCard"
 
 export default function CallToAction({ product }) {
     

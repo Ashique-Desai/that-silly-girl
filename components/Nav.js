@@ -30,16 +30,16 @@ const solutions = [
   {
     name: 'SHOP',
     description: 'ALL CATAGORIES.',
-    href: '#',
+    href: '/shop',
     icon: ChartBarIcon,
   },
   {
     name: 'STORY',
     description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    href: '/story',
     icon: CursorClickIcon,
   },
-  { name: 'WHY SILLY!', description: "Because being a little silly is important.", href: '#', icon: ShieldCheckIcon },
+  { name: 'WHY SASSY!', description: "Because being a little silly is important.", href: '#', icon: ShieldCheckIcon },
 
 ]
 const callsToAction = [
@@ -97,7 +97,7 @@ export default function NavExperimental3() {
                 Story
               </a>
               <a href="#" className="text-base font-medium  hover:text-gray-900">
-                Why Silly
+                Why Sassy
               </a>
             </Popover.Group>
           </div>
