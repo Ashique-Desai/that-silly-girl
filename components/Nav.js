@@ -87,7 +87,8 @@ export default function NavExperimental3() {
   return (
     <Popover className="relative bg-transparent uppercase">
       <div className="max-w-8xl mx-auto px-4 sm:px-16">
-        <div className="container py-8 md:justify-start md:space-x-10">
+          {/* Desktop */}
+        <div className="container ml-auto mr-auto py-8 md:justify-start md:space-x-10">
           <div className="hidden md:flex justify-start lg:w-0 lg:flex-1">
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
               <a href="/shop" className="text-base font-medium  hover:text-gray-900">
@@ -102,8 +103,8 @@ export default function NavExperimental3() {
             </Popover.Group>
           </div>
           {/* Hamburger Menu Below */}
-          <div className="box md:hidden">
-            <span>
+          <div className="box   md:hidden">
+            <span className='mr-auto'>
             <Popover.Button className="p-2 inline-flex items-center justify-center decoration-inherit hover:text-gray-500 ">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
@@ -129,7 +130,7 @@ export default function NavExperimental3() {
           <div className="box lg:w-0">
             <span>
             <SignedIn>
-              <div className="inline-block py-4 px-1 relative decoration-inherit">
+              <div className="inline-block px-1 relative decoration-inherit">
                 <UserButton />
               </div>
             </SignedIn>
