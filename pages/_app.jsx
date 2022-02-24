@@ -32,34 +32,36 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
   return (
-    <ClerkProvider theme={theme}>
-      {isPublicPage ? (
-        <ShopProvider>
-          <Layout>
-            <Component {...pageProps} key={router.asPath} />
-          </Layout>
-        </ShopProvider>
-
-      ) : (
-        <>
-          <SignedIn>
-            <ShopProvider>
-              <Layout>
-                <Component {...pageProps} key={router.asPath} />
-              </Layout>
-            </ShopProvider>
-          </SignedIn>
-          <SignedOut>
-            <RedirectToSignIn />
-          </SignedOut>
-        </>
-      )}
-      {/* <ShopProvider>
+      <ShopProvider>
       <Layout>
         <Component {...pageProps} key={router.asPath} />
       </Layout>
-    </ShopProvider> */}
-    </ClerkProvider>
+    </ShopProvider> 
+    
+    // <ClerkProvider theme={theme}>
+    //   {isPublicPage ? (
+    //     <ShopProvider>
+    //       <Layout>
+    //         <Component {...pageProps} key={router.asPath} />
+    //       </Layout>
+    //     </ShopProvider>
+
+    //   ) : (
+    //     <>
+    //       <SignedIn>
+    //         <ShopProvider>
+    //           <Layout>
+    //             <Component {...pageProps} key={router.asPath} />
+    //           </Layout>
+    //         </ShopProvider>
+    //       </SignedIn>
+    //       <SignedOut>
+    //         <RedirectToSignIn />
+    //       </SignedOut>
+    //     </>
+    //   )}
+     
+    // </ClerkProvider>
   )
 }
 
