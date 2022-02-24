@@ -87,7 +87,7 @@ export default function NavExperimental3() {
   return (
     <Popover className="relative bg-transparent uppercase">
       <div className="max-w-8xl mx-auto px-4 sm:px-16">
-        <div className="flex justify-between items-center py-8 md:justify-start md:space-x-10">
+        <div className="container py-8 md:justify-start md:space-x-10">
           <div className="hidden md:flex justify-start lg:w-0 lg:flex-1">
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
               <a href="/shop" className="text-base font-medium  hover:text-gray-900">
@@ -102,14 +102,17 @@ export default function NavExperimental3() {
             </Popover.Group>
           </div>
           {/* Hamburger Menu Below */}
-          <div className="-mr-2 -my-2 md:hidden">
+          <div className="box md:hidden">
+            <span>
             <Popover.Button className="p-2 inline-flex items-center justify-center decoration-inherit hover:text-gray-500 ">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
+            </span>
           </div>
           {/* Logo below */}
-          <div as="nav" className="flex space-x-10">
+          <div as="nav" className="box space-x-10">
+            <span>
             <div className="relative">
               <a href="/">
                 <span className="sr-only">Workflow</span>
@@ -120,9 +123,11 @@ export default function NavExperimental3() {
                 />
               </a>
             </div>
+            </span>
           </div>
           {/* last element on the navbar below */}
-          <div className="md:flex items-center justify-end md:flex-1 lg:w-0">
+          <div className="box lg:w-0">
+            <span>
             <SignedIn>
               <div className="inline-block py-4 px-1 relative decoration-inherit">
                 <UserButton />
@@ -160,6 +165,7 @@ export default function NavExperimental3() {
               </a>
               <MiniCart cart={cart} />
             </button>
+            </span>
           </div>
         </div>
       </div>

@@ -136,5 +136,18 @@
     color: #ff00a5;
     opacity: 1; /* Firefox */
   }
+  /* Navbar css - start */
+  .container {
+  display: flex;
+  }
+  .box {
+    flex: 1;
+    display: flex;
+  }
+
+  .box:first-child > span { margin-right: auto; }
+
+  .box:last-child  > span { margin-left: auto;  }
+  /* Navbar css - end */
   
 }
