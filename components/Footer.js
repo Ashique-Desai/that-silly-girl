@@ -8,7 +8,7 @@ const navigation1 = [
   const navigation2 = [
     { name: 'FAQs', href: '/faq' },
     { name: 'Terms and Conditions', href: '/terms' },
-    { name: 'Privacy Policy', href: '/Privacy' },
+    { name: 'Privacy Policy', href: '/privacy' },
     { name: 'Returns And Exchanges', href: '/returns' },
     // {name: 'Impact', href: '#'},
     
