@@ -88,7 +88,7 @@ export default function NavExperimental3() {
     <Popover className="relative bg-transparent uppercase">
       <div className="max-w-8xl mx-auto px-4 sm:px-16">
           {/* Desktop */}
-        <div className="container ml-auto mr-auto py-8 md:justify-start md:space-x-10">
+        <div className="wrapper-navbar ml-auto mr-auto py-8 md:justify-start md:space-x-10">
           <div className="hidden md:flex justify-start lg:w-0 lg:flex-1">
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
               <a href="/shop" className="text-base font-medium  hover:text-gray-900">

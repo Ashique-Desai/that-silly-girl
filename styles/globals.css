@@ -137,7 +137,7 @@
     opacity: 1; /* Firefox */
   }
   /* Navbar css - start */
-  .container {
+  .wrapper-navbar {
   display: flex;
   }
   .box {
