@@ -91,13 +91,13 @@ export default function NavExperimental3() {
         <div className="wrapper-navbar ml-auto mr-auto py-8 md:justify-start md:space-x-10">
           <div className="hidden md:flex justify-start lg:w-0 lg:flex-1">
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
-              <a href="/shop" className="text-base font-medium  hover:text-gray-900">
+              <a href="/shop" className="text-base font-medium">
                 Shop
               </a>
-              <a href="/story" className="text-base font-medium  hover:text-gray-900">
+              <a href="/story" className="text-base font-medium">
                 Story
               </a>
-              <a href="/shipping" className="text-base font-medium  hover:text-gray-900">
+              <a href="/shipping" className="text-base font-medium">
                 Shipping
               </a>
             </Popover.Group>
@@ -118,7 +118,7 @@ export default function NavExperimental3() {
               <a href="/">
                 {/* <span className="sr-only">Workflow</span> */}
                 <img
-                  className="h-auto min-w-[140px] sm:h-14"
+                  className="h-14 lg:h-12"
                   src="/logo-4-raster.svg"
                   alt=""
                 />

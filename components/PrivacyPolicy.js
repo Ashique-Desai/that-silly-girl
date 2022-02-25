@@ -10,9 +10,9 @@ const PrivacyPolicy = () => {
                 <div class="w-full px-6 py-6 mx-auto mt-10 bg-off-white sm:px-8 md:px-12 sm:py-8  lg:w-5/6 xl:w-2/3 rounded-lg">
                     {/* <h3 class="text-lg font-bold  sm:text-xl md:text-2xl">AGREEMENT TO TERMS</h3> */}
                     <p class="mt-2 text-base  sm:text-lg md:text-normal">
-                        At Website Name, accessible at Website.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Website Name and how we use it.
-                        If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at Email@Website.com
-                        This privacy policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Website Name. This policy is not applicable to any information collected offline or via channels other than this website.
+                        At Hey Sassy, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Hey Sassy and how we use it.
+                        If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at hello@heysassy.com
+                        This privacy policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Hey Sassy. This policy is not applicable to any information collected offline or via channels other than this website.
                     </p>
                 </div>
                 <div class="w-full px-6 py-6 mx-auto mt-10 bg-off-white sm:px-8 md:px-12 sm:py-8  lg:w-5/6 xl:w-2/3 rounded-lg">
@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
                 <div class="w-full px-6 py-6 mx-auto mt-10 bg-off-white sm:px-8 md:px-12 sm:py-8  lg:w-5/6 xl:w-2/3 rounded-lg">
                     <h3 class="text-lg font-bold  sm:text-xl md:text-2xl">Log Files</h3>
                     <p class="mt-2 text-base  sm:text-lg md:text-normal">
-                        Website Name follows a standard procedure of using log files. These files log visitors when they visit websites.
+                        Hey Sassy follows a standard procedure of using log files. These files log visitors when they visit websites.
                         All hosting companies do this and a part of hosting services' analytics. The information collected by log files include
                         internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages,
                         and possibly the number of clicks. These are not linked to any information that is personally identifiable.

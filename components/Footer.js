@@ -26,7 +26,7 @@ const navigation1 = [
             {
               navigation1.map((item, i) => (
                 <div key={i} className="px-6 lg:py-2 py-0">
-                  <a href={item.href} className="color-off-white hover:text-gray-900">
+                  <a href={item.href} className="color-off-white">
                     {item.name}
                   </a>
                 </div>
@@ -41,7 +41,7 @@ const navigation1 = [
             {
               navigation2.map((item, i) => (
                 <div key={i} className="px-6 lg:py-2 py-0">
-                  <a href={item.href} className="color-off-white hover:text-gray-900">
+                  <a href={item.href} className="color-off-white">
                     {item.name}
                   </a>
                 </div>
@@ -56,7 +56,7 @@ const navigation1 = [
             {
               navigation1.map((item, i) => (
                 <div key={i} className="px-6 lg:py-2 py-0">
-                  <a href={item.href} className="color-off-white hover:text-gray-900">
+                  <a href={item.href} className="color-off-white">
                     {item.name}
                   </a>
                 </div>

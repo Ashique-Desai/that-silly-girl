@@ -10,7 +10,7 @@ export default function FAQ() {
                 <div class="w-full px-6 py-6 mx-auto mt-10 bg-off-white sm:px-8 md:px-12 sm:py-8 lg:w-5/6 xl:w-2/3 rounded-lg">
                     <h3 class="text-lg font-bold  sm:text-xl md:text-2xl">Returns</h3>
                     <p class="mt-2 text-base  sm:text-lg md:text-normal">
-                        We want you to be so excited about every item you purchase from me so if you don't love your garment, send it back!
+                        We want you to be so excited about every item you purchase from us, so, if you don't love your garment, send it back!
                         To begin processing your return please go to: returns.heysassy.com
                         We offer full refunds on all regular priced items but there is $5 restocking fee per garment.
                         The restocking fee is waived if you opt to get your return in the form of store credit however.
