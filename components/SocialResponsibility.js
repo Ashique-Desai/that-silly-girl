@@ -1,5 +1,4 @@
 import React from "react"
-import poorGirlImage from '../images/poor-gir-bw.jpg'
 import poorGirlImage2 from '../images/poor-girl-2.jpg'
 import Image from 'next/image'
 

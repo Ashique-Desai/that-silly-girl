@@ -1,5 +1,11 @@
+const withPWA = require("next-pwa")
 
-module.exports = {
+module.exports = withPWA({
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+  },
   env: {
     SHOPIFY_STORE_DOMAIN: process.env.SHOPIFY_STORE_DOMAIN,
     SHOPIFY_STOREFRONT_ACCESSTOKEN: process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN,
@@ -8,4 +14,8 @@ module.exports = {
   images: {
     domains: ['cdn.shopify.com']
   }
-}
+})
+
+// module.exports = {
+ 
+// }
