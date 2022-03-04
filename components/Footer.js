@@ -41,10 +41,10 @@ export default function Footer() {
           </div>
           {
             navigation2.map((item, i) => (
-              <div key={i} className="px-6 lg:py-2 py-0">
-                <a href={item.href} className="color-off-white">
+              <div key={i} className="px-6 lg:py-2 py-0 color-off-white">
+                <Link href={item.href}>
                   {item.name}
-                </a>
+                </Link>
               </div>
             ))
           }
