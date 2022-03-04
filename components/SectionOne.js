@@ -1,4 +1,5 @@
 import React from 'react'
+import CTALink from './CTALink'
 
 export default function SectionOne() {
     return (
@@ -8,6 +9,9 @@ export default function SectionOne() {
                 We are a female founded brand who understands the sensibilities of modern young women. We understand the cool and the sassy like no other brand.
                 What say?
             </p>
+            <div className='pt-4'>
+                <CTALink url={'/story'} text={'Our Story'}  />
+            </div>
         </section>
     )
 }

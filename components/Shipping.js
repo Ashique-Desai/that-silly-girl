@@ -1,4 +1,5 @@
 import React from 'react'
+import CTALink from './CTALink'
 
 export default function Shipping() {
     return (
@@ -8,6 +9,9 @@ export default function Shipping() {
               We believe in delighting you not just with fantastic fashion products but also world class 
               delivery and fullfilment times! We are not Amazon by any stretch but we are not half as bad :)
             </p>
+            <div className='pt-4'>
+                <CTALink url={'/shop'} text={'Try us out'}  />
+            </div>
         </section>
     )
 }
