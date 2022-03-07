@@ -91,15 +91,15 @@ export default function NavExperimental3() {
         <div className="wrapper-navbar ml-auto mr-auto py-8 md:justify-start md:space-x-10">
           <div className="hidden md:flex justify-start lg:w-0 lg:flex-1">
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
-              <a href="/shop" className="text-base font-medium">
+              <Link href="/shop" className="text-base font-medium">
                 Shop
-              </a>
-              <a href="/story" className="text-base font-medium">
+              </Link>
+              <Link href="/story" className="text-base font-medium">
                 Story
-              </a>
-              <a href="/shipping" className="text-base font-medium">
+              </Link >
+              <Link  href="/shipping" className="text-base font-medium">
                 Shipping
-              </a>
+              </Link >
             </Popover.Group>
           </div>
           {/* Hamburger Menu Below */}
@@ -115,14 +115,13 @@ export default function NavExperimental3() {
           <div as="nav" className="box space-x-10">
             <span>
             <div className="relative">
-              <a href="/">
-                {/* <span className="sr-only">Workflow</span> */}
+              <Link  href="/">
                 <img
                   className="h-11"
                   src="/logo-4-raster.svg"
                   alt=""
                 />
-              </a>
+              </Link >
             </div>
             </span>
           </div>
@@ -207,20 +206,13 @@ export default function NavExperimental3() {
             </div>
             <div className="py-6 px-5">
               <div>
-                <Link href="/sign-in">
-                  <a
-                    href="#"
+                <Link  href="/sign-in">
+                  <span
                     className="w-full flex items-center justify-center px-4 py-2 border-transparent rounded-md shadow-sm text-base font-medium decoration-inherit bg-off-white"
                   >
                     Sign in / Sign up
-                  </a>
+                  </span>
                 </Link>
-                {/* <p className="mt-6 text-center text-base font-medium text-gray-200">
-                  Existing customer?{' '}
-                  <a href="#" className="color-off-white hover:text-indigo-500">
-                    Sign in
-                  </a>
-                </p> */}
               </div>
             </div>
           </div>
