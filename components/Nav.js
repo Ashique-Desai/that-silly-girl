@@ -114,12 +114,12 @@ export default function NavExperimental3() {
           {/* Logo below */}
           <div as="nav" className="box space-x-10">
             <span>
-            <div className="relative">
+            <div style={{cursor: "pointer"}}  className="relative">
               <Link  href="/">
                 <img
                   className="h-11"
                   src="/logo-4-raster.svg"
-                  alt=""
+                  alt="Hey Sassy - Home"
                 />
               </Link >
             </div>
