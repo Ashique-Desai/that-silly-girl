@@ -15,6 +15,7 @@ export default function Hero() {
           src={heroMobileTrial}
           alt="hero"
           layout='responsive'
+          objectFit='cover'
           priority
         />
       </div>
@@ -24,6 +25,7 @@ export default function Hero() {
             src={heroLarge}
             alt="hero"
             layout='fill'
+            objectFit='cover'
 
           />
       </div>
