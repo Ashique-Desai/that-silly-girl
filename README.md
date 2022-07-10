@@ -1,4 +1,4 @@
-# Next.js Web App (PWA) Headless Shopify Backend with GraphQL query
+# Next.js Web App (PWA) Headless Shopify Backend with GraphQL queries
 
 Commands
 ```bash
