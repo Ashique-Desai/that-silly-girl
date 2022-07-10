@@ -1,5 +1,6 @@
 # Next.js Web App (PWA) Headless Shopify Backend with GraphQL query
 
+Commands
 ```bash
   // Development  
   yarn dev
